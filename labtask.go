@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	_ "github.com/NasirUllahAman/module/example"
+)
 
 func main() {
 
@@ -11,5 +15,7 @@ func main() {
 
 	fmt.Println(true && false)
 	fmt.Println(true || false)
+	fmt.Println(example.Add(3, 4))
+
 	fmt.Println(!true)
 }
